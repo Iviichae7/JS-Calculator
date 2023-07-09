@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- main container  -->
+    <div class="container">
+      <!-- the card component for the calculator -->
+      <div class="calculator">
+        <h1 class="title">JS Calculator</h1>
+
+        <!-- The input elements for the numbers -->
+        <label class="label" for="number1">First Number</label><br />
+        <input
+          class="input-text"
+          type="number"
+          id="number1"
+          placeholder="Number 1"
+        />
+        <label class="label" for="number2">Second Number</label>
+        <input
+          class="input-text"
+          type="number"
+          id="number2"
+          placeholder="Number 2"
+        /><br />
+
+        <!-- The buttons/operations -->
+        <label class="label">Choose Operation</label>
+        <div class="button-container">
+          <button class="button" onclick="math('+')">+</button>
+          <button class="button" onclick="math('-')">-</button>
+          <button class="button" onclick="math('*')">*</button>
+          <button class="button" onclick="math('/')">/</button>
+        </div>
+
+        <!-- The output of the total -->
+        <p>Result</p>
+        <h2 class="total" id="total">
+          Enter two numbers and choose operation to show result here.
+        </h2>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
